@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>NASA NETWORK API</h1>
+        <!-- <div class="menu">
+            <li class="menu-list"></li>
+            <li class="menu-list"></li>
+            <li class="menu-list"></li>
+        </div> -->
+    </header>
+    <main>
+
+        <!-- today image -->
+        <section class="hero">
+            <h2 class="titleHero">Photo of today</h2>
+            <article class="primary">
+                <h3 class="loading">Loading image, please wait....</h3>
+            </article>
+        </section>
+
+        <!-- data mars -->
+        <div class="hero2">
+            <div id="mars-today"></div>
+            <div id="mars-data" class="mars-chart"></div>
+
+        </div>
+
+
+        <!-- other image -->
+        <section>
+            <h2 class="titleOther">Preview some image about last day...</h2>
+            <h3 class="loading2">Loading image, please wait....</h3>
+
+            <div class="containers">
+
+            </div>
+
+            <div class="popupContainer">
+                <div class="popup">
+                    
+                        <button class="close">X</button>
+                        <h3 class="details-title"></h3>
+                        <img class="details-img" src="https://apod.nasa.gov/apod/image/2210/NGC1300_HST_1080.jpg" alt="">
+                        <p class="details-description"></p>
+                        <p class="details-copy"></p>
+                    
+                </div>
+            </div>
+            
+        </section>
+    </main>
+</body>
+</html>

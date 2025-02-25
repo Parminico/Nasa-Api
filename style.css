@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;1,600&display=swap');
+
+:root {
+    --primary: #0A6ABF;
+    --primaryDark: #1D2F40;
+    --secondary: #034C8C;
+    --secondary2: #024873;
+    --terthiary: #3F93A6;
+    --background: #c3c3c3;
+
+    --space1: 0.5rem;
+    --space2: 1rem;
+    --space3: 2rem;
+}
+
+
+html, body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 100%;
+    background-color: var(--background);
+}
+h1 {
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+header {
+    background-color: var(--secondary);
+    padding: var(--space2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+/* .menu-list {
+    list-style: none;
+    background-color: white;
+    margin-top: 5px;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    transition: 0.7s;
+}
+.menu:hover .menu-list {
+    background-color: red;
+}
+.menu:hover .menu-list:nth-child(1) {
+    transform: rotate(45deg) translateY(14px);
+}
+.menu:hover .menu-list:nth-child(2) {
+    width: 0;
+    opacity: 30%;
+}
+.menu:hover .menu-list:nth-child(3) {
+    transform: rotate(-45deg) translateY(-14px);
+} */
+
+
+.hero {
+    background-color: white;
+    max-width: 80%;
+    margin: 20px auto;
+    padding: var(--space1);
+    border-radius: var(--space1);
+}
+.hero2 {
+    background-color: white;
+    max-width: 80%;
+    margin: 20px auto;
+    padding: var(--space1);
+    border-radius: var(--space1);
+    overflow: hidden;
+}
+.hero2 h2 {
+    background-color: var(--terthiary);
+    border-radius: var(--space1);
+    padding: var(--space1);
+    margin: var(--space1);
+    color: white;
+    text-align: center;
+}
+.hero2 p {
+    margin-left: var(--space2);
+}
+article {
+    display: flex;
+    text-align: center;
+    position: relative;
+}
+.primary cite {
+    margin-top: var(--space2);
+}
+article img {
+    overflow: hidden;
+    object-fit: cover;
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    border-radius: var(--space1);
+}
+
+.titleHero {
+    background-color: var(--terthiary);
+    border-radius: var(--space1);
+    padding: var(--space1);
+    margin: var(--space1);
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    height: 0;
+    background-color: #3f93a64d;
+    width: 50%;
+    transition: .5s;
+}
+article:hover .overlay {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.hero-text {
+    padding: var(--space2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titleOther {
+    text-align: center;
+    padding: var(--space3);
+    color: var(--secondary);
+    text-decoration: overline;
+}
+
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space1);
+    justify-content: center;
+
+}
+.container-image img {
+    width: 200px;
+    overflow: hidden;
+    object-fit: cover;
+    height: 200px;
+}
+.container-image:hover {
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
+.popupContainer {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.popup {
+    background-color: aliceblue;
+    width: 90%;
+    height: 85vh;
+    margin: 0 auto;
+    border-radius: var(--space1);
+    overflow: hidden;
+    position: relative;
+    overflow-y: auto;
+    padding: var(--space1);
+}
+.popup img {
+    object-fit: cover;
+    width: 100%;
+    object-position: center;
+    height: 50vh;
+}
+.details-title {
+    text-align: center;
+    padding: var(--space2);
+}
+.details-copy {
+    margin-top: var(--space3);
+}
+
+.close {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: var(--space1);
+    padding: var(--space1) var(--space2);
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+}
+
+.mars-chart {
+    min-height: 500px;
+}
