@@ -88,7 +88,7 @@ header {
 .hero2 p {
     margin-left: var(--space2);
 }
-article {
+.primary {
     display: flex;
     text-align: center;
     position: relative;
@@ -96,7 +96,7 @@ article {
 .primary cite {
     margin-top: var(--space2);
 }
-article img {
+.primary img {
     overflow: hidden;
     object-fit: cover;
     flex: 0 0 50%;
@@ -199,13 +199,26 @@ article:hover .overlay {
     color: white;
     border: none;
     border-radius: var(--space1);
-    padding: var(--space1) var(--space2);
+    padding: 0.4rem;
     cursor: pointer;
     position: absolute;
-    top: 16px;
-    right: 20px;
+    top: 5px;
+    right: 10px;
 }
 
 .mars-chart {
     min-height: 500px;
+}
+
+@media screen and (max-width: 576px) {
+    .primary {
+        flex-direction: column;
+        align-items: center;
+    }
+    .primary img {
+        width: 200px;
+        overflow: hidden;
+        object-fit: cover;
+        height: 200px;
+    }
 }
